@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula.100</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__heading">
+                <span class="header__name">formula.100</span><br />
+                Твоя формула швидкості
+            </h1>
+            <div class="nav__wrap">
+                <ul>
+                    <li>
+                        <a class="nav__link" href="../authorisation/authorisation.html">Авторизуватися</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="../registration/registration.html">Зареєструватися</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#footer">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__heading">
+                <h2>Оберіть машину своєї мрії</h2>
+            </div>
+            <form method="post" action="https://fom.in.ua/echo">
+                <div class="section">
+                    <select class="multiple" multiple="multiple" name="KuzovType">
+                        <option class="option__heading pinned" disabled>Тип кузова</option>
+                        <option value="Седан">Седан</option>
+                        <option value="Купе">Купе</option>
+                        <option value="Позашляховик">Позашляховик</option>
+                        <option value="Кросовер">Кросовер</option>
+                        <option value="Хетчбек">Хетчбек</option>
+                        <option value="Універсал">Універсал</option>
+                        <option value="Кабріолет">Кабріолет</option>
+                        <option value="Пікап">Пікап</option>
+                        <option value="Фургон">Фургон</option>
+                    </select>
+                    <select class="multiple" multiple="multiple" name="Brand">
+                        <option class="option__heading pinned" disabled>Марка автомобіля</option>
+                        <option value="Alfa Romeo">Alfa Romeo</option>
+                        <option value="Aston Martin">Aston Martin</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Bentley">Bentley</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Bugatti">Bugatti</option>
+                        <option value="Cadillac">Cadillac</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Citroen">Citroen</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Jaguar">Jaguar</option>
+                        <option value="KIA">KIA</option>
+                        <option value="Lamborghini">Lamborghini</option>
+                        <option value="Lexus">Lexus</option>
+                        <option value="Maserati">Maserati</option>
+                        <option value="Maybach">Maybach</option>
+                        <option value="Mazda">Mazda</option>
+                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Opel">Opel</option>
+                        <option value="Peugeot">Peugeot</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Renault">Renault</option>
+                        <option value="Rolls-Royce">Rolls-Royce</option>
+                        <option value="Skoda">Skoda</option>
+                        <option value="Subaru">Subaru</option>
+                        <option value="Tesla">Tesla</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                    </select>
+                    <select class="multiple" multiple="multiple" name="Country">
+                        <option class="option__heading pinned" disabled>Країна виробника</option>
+                        <option value="Китай">Китай</option>
+                        <option value="США">США</option>
+                        <option value="Японія">Японія</option>
+                        <option value="Індія">Індія</option>
+                        <option value="Південна Корея">Південна Корея</option>
+                        <option value="Німеччина">Німеччина</option>
+                        <option value="Мексика">Мексика</option>
+                        <option value="Бразилія">Бразилія</option>
+                        <option value="Іспанія">Іспанія</option>
+                        <option value="Таїланд">Таїланд</option>
+                    </select>
+                    <select class="multiple" multiple="multiple" name="Condition">
+                            <option class="option__heading pinned" disabled>Стан автомобіля</option>
+                            <option value="У кредиті">У кредиті</option>
+                            <option value="Нерозмитнений">Нерозмитнений</option>
+                            <option value="Битий">Битий</option>
+                    </select>
+                </div>
+               
+                <div class="section">
+                    <div class="from-to">
+                        <p class="option__heading" >Ціна у гривнях</p>
+                        <input class="from-to-bar" type="number" name="price_min" placeholder="Від" min="0">
+                        <input class="from-to-bar" type="number" name="price_max" placeholder="До" max="1000000000">
+                    </div>
+                    <div class="from-to">
+                        <p class="option__heading">Рік випуску</p>
+                        <input class="from-to-bar" type="number" name="year_min" placeholder="Від" min="1900">
+                        <input class="from-to-bar" type="number" name="year_max" placeholder="До" max="2023">
+                    </div>
+                </div>
+
+
+                <div class="section">
+                    <div class="radio">
+                        <p class="option__heading">Тип пального</p>
+                        <input type="radio" name="Fuel" value="Бензин"/>Бензин
+                        <input type="radio" name="Fuel" value="Дизель"/>Дизель
+                        <input type="radio" name="Fuel" value="Газ"/>Газ
+                        <input type="radio" name="Fuel" value="Електрика"/>Електрика
+                        <input type="radio" name="Fuel" value="Гібрид"/>Гібрид
+                    </div>
+                    <div class="radio">
+                        <div>
+                            <p class="option__heading">Коробка передач</p>
+                            <input type="radio" name="Transmission" value="Механіка"/>Механіка
+                            <input type="radio" name="Transmission" value="Автомат"/>Автомат
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="section">
+                    <div class="color">
+                        <p class="option__heading">Колір</p>
+                        <input type="color" name="Color" /></label>
+                    </div>
+                    <div class="comfort">
+                        <p class="option__heading">Зручності</p>
+                        <input type="checkbox" name="Comfort" value="Люк"/>
+                        <label for="Comfort">Люк</label>
+                        <input type="checkbox" name="Comfort" value="Шкіряний салон"/>
+                        <label for="Comfort">Шкіряний салон</label>
+                        <input type="checkbox" name="Comfort" value="Великий багажник"/>
+                        <label for="Comfort">Великий багажник</label>
+                        <input type="checkbox" name="Comfort" value="Затоновані вікна"/>
+                        <label for="Comfort">Затоновані вікна</label>
+                    </div>
+                </div>
+
+
+                <div class="button">
+                    <input class="submit" type="submit" name="Пошук" value="Пошук" />
+                </div>
+            </form>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="footer__wrap">
+                <p class="footer__heading">Наші контакти:</p>
+                <p>Телефон:
+                    <span>+380688283832</span>
+                </p>
+                <p>Telegram:
+                    <span>@Formula_100</span>
+                </p>
+                <p>Instagram:
+                    <span>@f.100</span>
+                </p>
+                <p>E-mail:
+                    <span>formula100_support@gmail.com</span>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
