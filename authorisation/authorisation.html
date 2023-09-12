@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form method="post" action="https://fom.in.ua/echo">
+        <fieldset>
+            <legend>
+                <div class="heading">
+                    <p class="heading__item">Вхід на сайт</p>
+                    <a class="link" href="../main/main.html">
+                        <p class="heading__item--mod">formula.100</p>
+                    </a>
+                </div>
+            </legend>
+            <div class="wrapper">
+                <p>
+                    <label>
+                        <p class="field__name">E-mail</p>
+                        <input class="field" type="email" name="EmailLoginForm" placeholder="Ваш e-mail" required="required" />
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <p class="field__name">Пароль</p>
+                        <input class="field" type="password" name="PasswordLoginForm" placeholder="Ваш пароль" required="required"/>
+                    </label>
+                </p>
+
+                <p>
+                    <input class="checkbox" type="checkbox" name="RememberMe">
+                    <label class="remember-me" for="RememberMe">Запам'ятати мене</label>
+                </p>
+
+                <p>
+                    <input class="sign-in" type="submit" value="Увійти" />
+                </p>
+                
+                <a class="registration" href="../registration/registration.html">Зареєструватися</a>
+
+                <a class="img" href="../main/main.html">
+                    <img src="../imgs/logo.png" alt="logo">
+                </a>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
