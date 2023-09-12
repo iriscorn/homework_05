@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form method="post" action="https://fom.in.ua/echo">
+        <fieldset>
+            <legend>
+                <div class="heading">
+                    <p class="heading__item">Реєстрація на</p>
+                    <a class="link" href="../main/main.html">
+                        <p class="heading__item--mod">formula.100</p>
+                    </a>
+                </div>
+            </legend>
+            
+            <div class="wrapper">
+                <p>
+                    <p class="field__name">Як Вас звати?</p>
+                    <input class="field" type="text" name="Name" placeholder="Ваше ім'я та прізвище" required="required" />
+                </p>
+
+                <div>
+                    <p class="field__name">Ваша стать</p>
+                    <div class="sex">
+                        <input type="radio" name="sex" value="male"/>Пан
+                        <input type="radio" name="sex" value="female"/>Пані
+                        <input type="radio" name="sex" value="other"/>Інше
+                    </div>
+                </div>
+
+                <p>
+                    <label>
+                        <p class="field__name">Телефон</p>
+                        <input class="field" type="tel" name="phone" pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}"
+                        placeholder="Ваш номер телефону" title="+38 (097) 123-45-67" />
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <p class="field__name">E-mail</p>
+                        <input class="field" type="email" name="EmailLoginForm" placeholder="Ваш e-mail" required="required" />
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <p class="field__name">Пароль</p>
+                        <input class="field" type="password" name="PasswordLoginForm" placeholder="Придумайте надійний пароль" required="required"/>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <p class="field__name">Підтвердження паролю</p>
+                        <input class="field" type="password" name="PasswordLoginForm" placeholder="Повторіть свій пароль" required="required"/>
+                    </label>
+                </p>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="Notifications" checked="checked">
+                    <label for="Notifications">Отримувати новини та пропозіції від formula.100</label>
+                </div>
+
+                <p>
+                    <input class="registrate" type="submit" value="Зареєструватися" />
+                </p>
+                <a class="authorisation" href="../authorisation/authorisation.html">Вже маєте акаунт? Увійти</a>
+            </div>
+
+            <a class="img" href="../main/main.html">
+                <img src="../imgs/logo.png" alt="logo">
+            </a>
+        </fieldset>
+    </form>
+</body>
+</html>
